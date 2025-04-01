@@ -1,131 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>Participants</title>
-    <link rel="stylesheet" href="homepage.css">
+	<meta charset="UTF-8">
+	<title>Participants</title>
+	<link rel="stylesheet" href="homepage.css" />
 </head>
+
 <body>
-    <nav class="top-nav">
-        <div class="concordia-title">
-            Concordia University of Edmonton Course Management System
-        </div>
-        <div class="top-buttons">
-            <div class="top-button-line"></div>
-            <button class="bell-icon"><img src="bell-icon.png" /></button>
-            <button class="message-icon"><img src="message-icon.png" /></button>
-            <div class="username">Julian Munguia-Scott</div>
-            <button class="user-icon">JM</button>
-            <button class="dropdown-icon"><img src="dropdown-button.PNG" /></button>
-            <div class="top-dropdown">
-                <button class="profile-button">Profile</button>
-                <div class="middle-dropdown-buttons">
-                    <button class="middle-dropdown-button">Grades</button>
-                    <button class="middle-dropdown-button">Calendar</button>
-                    <button class="middle-dropdown-button">Messages</button>
-                    <button class="middle-dropdown-button private-files">Private Files</button>
-                    <button class="middle-dropdown-button">Reports</button>
-                </div>
-                <button class="profile-button">Preferences</button>
-                <div class="dropdown-border"></div>
-                <a href="https://identity.concordia.ab.ca/idp/profile/Logout?execution=e2s2">
-                    <button class="profile-button log-out">Log Out</button>
-                </a>
-            </div>
-        </div>
-    </nav>
+	<!-- Top Navigation Bar -->
+	<nav class="top-nav">
+		<div class="concordia-title">Concordia University of Edmonton Course Management System</div>
+		<div class="top-buttons">
+			<div class="top-button-line"></div>
+			<button class="bell-icon"><img src="bell-icon.png" /></button>
+			<button class="message-icon"><img src="message-icon.png" /></button>
+			<div class="username">Julian Munguia-Scott</div>
+			<button class="user-icon">JM</button>
+			<button class="dropdown-icon"><img src="dropdown-button.PNG" /></button>
+			<div class="top-dropdown">
+				<button class="profile-button">Profile</button>
+				<div class="middle-dropdown-buttons">
+					<button class="middle-dropdown-button">Grades</button>
+					<button class="middle-dropdown-button">Calendar</button>
+					<button class="middle-dropdown-button">Messages</button>
+					<button class="middle-dropdown-button private-files">Private Files</button>
+					<button class="middle-dropdown-button">Reports</button>
+				</div>
+				<button class="profile-button">Preferences</button>
+				<div class="dropdown-border"></div>
+				<a href="https://identity.concordia.ab.ca/idp/profile/Logout?execution=e2s2">
+					<button class="profile-button log-out">Log Out</button>
+				</a>
+			</div>
+		</div>
+	</nav>
 
-    <header>
-        <h1 class="main-head">(1-JAN-2025) IT 202(A): Web Design</h1>
-        <a class="home-link" href="homepage.html">Home</a>
-    </header>
+	<!-- Header -->
+	<header>
+		<h1 class="main-head">(1-JAN-2025) IT 202(A): Web Design</h1>
+		<a class="home-link" href="homepage.html">Home</a>
+	</header>
+	<div class="breadcrumbs">
+		<a href="homepage.html">Home</a> /
+		<a href="courses.html">My courses</a> /
+		<a href="#">1-JAN-2025IT202A</a> /
+		<a href="#">Participants</a>
+	</div>
 
-    <div class="main-container">
-        <aside>
-            <h3 class="side-nav">Navigation</h3>
-            <div class="side-links">
-                <div class="home-nav">Home</div>
-                <div class="dashboard-nav">Dashboard</div>
-                <div class="site-pages">Site Pages</div>
-                <div class="mycourses">
-                    <div class="mycourses-nav-flex">
-                        <button class="mycourses-nav-button"><img src="side-dropdown.png" /></button>
-                        <div class="mycourses-nav-text">My courses</div>
-                    </div>
-                    <div class="mycourses-dropdown"></div>
-                </div>
-            </div>
-        </aside>
+	<!-- Page Layout -->
+	<div class="main-container">
+		<!-- Left Sidebar -->
+		<aside>
+			<h3 class="side-nav">Navigation</h3>
+			<div class="side-links">
+				<div class="home-nav">Home</div>
+				<div class="dashboard-nav">Dashboard</div>
+				<div class="site-pages">Site Pages</div>
+				<div class="mycourses">
+					<div class="mycourses-nav-flex">
+						<button class="mycourses-nav-button"><img src="side-dropdown.png" /></button>
+						<div class="mycourses-nav-text">My courses</div>
+					</div>
+					<div class="mycourses-dropdown"></div>
+				</div>
+			</div>
+		</aside>
 
-        <main>
-            <div class="participants-header">
-                <h2>Enrolled Users</h2>
-                <div class="filters">
-                    <label for="match-filter">Match:</label>
-                    <select id="match-filter" class="filter-dropdown">
-                        <option value="all">All</option>
-                        <option value="any">Any</option>
-                        <option value="none">None</option>
-                    </select>
+		<!-- Main Content -->
+		<main>
+			<div class="participants-header">
+				<h2>Enrolled Users</h2>
+				<div class="filters">
+					<label for="match-filter">Match:</label>
+					<select id="match-filter" class="filter-dropdown">
+						<option value="all">All</option>
+						<option value="any">Any</option>
+						<option value="none">None</option>
+					</select>
 
-                    <label for="select-filter">Select:</label>
-                    <select id="select-filter" class="filter-dropdown">
-                        <option value="all">All</option>
-                        <option value="roles">Roles</option>
-                        <option value="groups">Groups</option>
-                    </select>
+					<label for="select-filter">Select:</label>
+					<select id="select-filter" class="filter-dropdown">
+						<option value="all">All</option>
+						<option value="roles">Roles</option>
+						<option value="groups">Groups</option>
+					</select>
 
-                    <button id="apply-filters" class="my-courses-button">Apply Filters</button>
-                </div>
-            </div>
+					<button class="my-courses-button">Apply Filters</button>
+				</div>
+			</div>
 
-            <div class="alphabet-filters">
-                <label>First Name:</label>
-                <div class="alphabet-links">
-                    <a href="#">All</a>
-                    <a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a><a href="#">E</a>
-                    <a href="#">F</a><a href="#">G</a><a href="#">H</a><a href="#">I</a><a href="#">J</a>
-                    <a href="#">K</a><a href="#">L</a><a href="#">M</a><a href="#">N</a><a href="#">O</a>
-                    <a href="#">P</a><a href="#">Q</a><a href="#">R</a><a href="#">S</a><a href="#">T</a>
-                    <a href="#">U</a><a href="#">V</a><a href="#">W</a><a href="#">X</a><a href="#">Y</a><a href="#">Z</a>
-                </div>
-            </div>
+			<!-- First Name Filters -->
+			<div class="alphabet-filters">
+				<label>First Name:</label>
+				<div class="alphabet-links">
+					<a href="#">All</a><a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a>
+					<a href="#">E</a><a href="#">F</a><a href="#">G</a><a href="#">H</a><a href="#">I</a>
+					<a href="#">J</a><a href="#">K</a><a href="#">L</a><a href="#">M</a><a href="#">N</a>
+					<a href="#">O</a><a href="#">P</a><a href="#">Q</a><a href="#">R</a><a href="#">S</a>
+					<a href="#">T</a><a href="#">U</a><a href="#">V</a><a href="#">W</a><a href="#">X</a>
+					<a href="#">Y</a><a href="#">Z</a>
+				</div>
+			</div>
 
-            <table class="participants-table">
-                <thead>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Role</th>
-                    </tr>
-                </thead>
-                <tbody id="participants-list">
-                    <!-- Rows will be dynamically added by JS -->
-                </tbody>
-            </table>
+			<!-- Last Name Filters -->
+			<div class="alphabet-filters">
+				<label>Last Name:</label>
+				<div class="alphabet-links">
+					<a href="#">All</a><a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a>
+					<a href="#">E</a><a href="#">F</a><a href="#">G</a><a href="#">H</a><a href="#">I</a>
+					<a href="#">J</a><a href="#">K</a><a href="#">L</a><a href="#">M</a><a href="#">N</a>
+					<a href="#">O</a><a href="#">P</a><a href="#">Q</a><a href="#">R</a><a href="#">S</a>
+					<a href="#">T</a><a href="#">U</a><a href="#">V</a><a href="#">W</a><a href="#">X</a>
+					<a href="#">Y</a><a href="#">Z</a>
+				</div>
+			</div>
+			
+			<!-- Pagination -->
+			<div class="pagination">
+				<button>1</button>
+				<button>2</button>
+				<button>3</button>
+				<button>4</button>
+				<button>&raquo;</button>
+			</div>
+		</main>
 
-            <div class="pagination">
-                <button class="pagination-button">1</button>
-                <button class="pagination-button">2</button>
-                <button class="pagination-button">Next</button>
-            </div>
-        </main>
-    </div>
+		<!-- Right Sidebar -->
+		<aside>
+			<div class="sidebar-section">
+				<h4>Course summary</h4>
+				<p>An introduction to modern technologies for designing websites. Topic include the basics of coding and styling webpages, building responsive webpages, forms, tables, adding JavaScript and multimedia elements, testing and debugging webpages, publishing pages on the Web.</p>
+			</div>
+			<div class="sidebar-section">
+				<h4>Course Section Syllabus</h4>
+				<a href="#">IT 202A W25 DW Syllabus.pdf (01-Apr-2025)</a>
+			</div>
+		</aside>
+	</div>
 
-    <footer>
-        <div class="footer-contact">
-            <img style="padding-top:2px" src="mail-icon.png" />
-            <div style="text-decoration: underline; padding-top:6px;">Contact site support</div>
-        </div>
-        <div class="footer-login">
-            You are logged in as <span style="text-decoration: underline;">Julian Munguia-Scott</span><span style="text-decoration: underline; margin-left:5px;">(Log out)</span>
-        </div>
-        <img class="moodle" src="moodle.png" />
-        <div class="footer-mobile">Get the mobile app</div>
-    </footer>
+	<!-- Footer -->
+	<footer>
+		<div class="footer-contact">
+			<img style="padding-top:2px" src="mail-icon.png"/>
+			<div style="text-decoration: underline; padding-top:6px;">Contact site support</div>
+		</div>
+		<div class="footer-login">
+			You are logged in as <span style="text-decoration: underline;">Julian Munguia-Scott</span><span style="text-decoration: underline; margin-left:5px;">(Log out)</span>
+		</div>
+		<img class="moodle" src="moodle.png" />
+		<div class="footer-mobile">Get the mobile app</div>
+	</footer>
 
-    <script src="homepage.js"></script>
-    <script src="participantspage.js"></script>
+	<script src="homepage.js"></script>
+	<script src="participantspage.js"></script>
 </body>
 </html>
