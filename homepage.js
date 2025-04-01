@@ -92,3 +92,71 @@ function toggleTopDropDown(){
         topDropDown.classList.remove("top-dropdown-off")
     }
 }
+
+let sitesDropDownToggle = false;
+
+const sites = document.querySelector(".sites-dropdown")
+let sitesDropdown = sites.innerHTML
+console.log(sitesDropdown)
+
+const sitesButton = document.querySelector(".sites-nav-button")
+sitesButton.addEventListener("click", toggleSites)
+
+function toggleSites (){
+    console.log(sitesDropDownToggle)
+    if (!sitesDropDownToggle){
+        sites.innerHTML =
+        `<div class="sites-nav">
+            <button class="sites-button">
+
+            </button>
+            <div class="sites-text">
+                My Courses
+            </div>
+        </div>
+        <div class="sites-nav">
+            <button class="sites-button">
+                
+            </button>
+            <div class="sites-text">
+                Site blogs
+            </div>
+        </div>
+        <div class="sites-nav">
+            <button class="sites-button">
+                
+            </button>
+            <div class="sites-text">
+                Site badges
+            </div>
+        </div>
+        <div class="sites-nav">
+            <button class="sites-button">
+                
+            </button>
+            <div class="sites-text">
+                Tags
+            </div>
+        </div>`;
+        sitesDropDownToggle = true;
+    } else{
+            sites.innerHTML =null;
+            sitesDropDownToggle = false;
+    }
+}
+
+sitesDropDownToggle = false;
+
+const sitesDropDownButton = document.querySelector(".sites-nav-button")
+const sitesDropDown = document.querySelector(".sites-dropdown")
+sitesDropDownButton.addEventListener("click", sitesToggleDropDown)
+
+function sitesToggleTopDropDown(){
+    if (!sitesDropDownToggle){
+        sitesDropDownToggle = true
+        sitesDropDown.classList.add("top-dropdown-off")
+    }else{
+        sitesDropDownToggle = false
+        sitesDropDown.classList.remove("top-dropdown-off")
+    }
+}
