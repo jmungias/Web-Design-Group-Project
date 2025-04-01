@@ -624,3 +624,263 @@ footer{
     padding-left:0px;
     position: relative;
 }
+/* === PARTICIPANT PAGE STYLING === */
+
+.page-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    gap: 24px;
+    padding: 30px 40px;
+    align-items: start;
+}
+
+aside, .participants-card, .sidebar-section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+aside {
+    padding: 16px;
+}
+
+.participants-card {
+    padding: 24px;
+}
+
+.sidebar-section {
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.filters, .alphabet-filters, .participants-table {
+    margin-bottom: 24px;
+}
+
+.alphabet-links a {
+    display: inline-block;
+    border: 1px solid lightgray;
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    color: #0f6cbf;
+    text-decoration: none;
+}
+
+.alphabet-links a:hover {
+    background-color: #0f6cbf;
+    color: white;
+}
+
+.participants-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.participants-table th, .participants-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.participants-table th {
+    background-color: #f1f1f1;
+}
+
+.pagination button {
+    margin-right: 4px;
+    padding: 6px 12px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #e9ecef;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li ul {
+    padding-left: 16px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #0f6cbf;
+    font-size: 15px;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.filter-dropdown,
+.my-courses-button {
+    margin: 0 8px 0 4px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+}
+/* === Breadcrumb Navigation === */
+.breadcrumbs {
+    font-size: 15px;
+    padding: 16px 30px 0px 30px;
+    color: #0f6cbf;
+}
+
+.breadcrumbs a {
+    color: #0f6cbf;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.alphabet-links a.active {
+    background-color: #0f6cbf;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+/* === PARTICIPANT PAGE FILTER STYLING === */
+
+/* Filter container box */
+.filter-box {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    width: fit-content;
+}
+
+/* Dropdown row */
+.condition-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.condition-bar label {
+    font-weight: bold;
+}
+
+.condition-bar select {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Button group */
+.condition-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Filter buttons */
+button.my-courses-button,
+button.clear-filters-button {
+    display: inline-block;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    line-height: 40px;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Blue apply button */
+button.my-courses-button {
+    background-color: #0f6cbf;
+    color: white;
+}
+
+/* Grey clear button */
+button.clear-filters-button {
+    background-color: #d1d1d1;
+    color: black;
+}
+
+/* Add condition button */
+button.add-condition {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Alphabet A–Z links */
+.alphabet-filters {
+    margin: 10px 0;
+}
+
+.alphabet-links a {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    margin: 2px;
+    text-decoration: none;
+    color: #0f6cbf;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.alphabet-links a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Active selected filter */
+.alphabet-links a.active {
+    background-color: #0f6cbf;
+    color: white;
+    font-weight: bold;
+}
+
+/* Pagination buttons */
+.pagination {
+    margin: 20px 0;
+}
+
+.pagination button {
+    border: 1px solid #ccc;
+    background: white;
+    color: #0f6cbf;
+    padding: 6px 12px;
+    margin: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination button.active {
+    background-color: #0f6cbf;
+    color: white;
+}
