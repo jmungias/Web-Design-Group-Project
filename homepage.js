@@ -39,7 +39,7 @@ function toggleMyCourses (){
                 <img src="side-dropdown.png"/>
             </button>
             <div class="course-nav-text">
-                1-JAN-2025IT202A
+                1-JAN-2025IT301A
             </div>
         </div>
         <div class="course-nav">
@@ -47,7 +47,7 @@ function toggleMyCourses (){
                 <img src="side-dropdown.png"/>
             </button>
             <div class="course-nav-text">
-                1-JAN-2025IT202A
+                1-JAN-2025IT302A
             </div>
         </div>
         <div class="course-nav">
@@ -55,7 +55,7 @@ function toggleMyCourses (){
                 <img src="side-dropdown.png"/>
             </button>
             <div class="course-nav-text">
-                1-JAN-2025IT202A
+                1-JAN-2024CMPT211A
             </div>
         </div>
         <div class="course-nav">
@@ -63,7 +63,7 @@ function toggleMyCourses (){
                 <img src="side-dropdown.png"/>
             </button>
             <div class="course-nav-text">
-                1-JAN-2025IT202A
+                1-JAN-2024IT210A
             </div>
         </div>
         <div class="more">

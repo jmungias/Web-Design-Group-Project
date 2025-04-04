@@ -143,7 +143,7 @@ aside{
     margin-left: 14px;
     border: 1px solid lightgray;
     margin-top: 15px;
-    background-color: #f8f9fa;
+    background-color: #fffcfc;
     border-radius: 5px;
     padding-bottom:10px;
 }
@@ -635,7 +635,7 @@ footer{
 }
 
 aside, .participants-card, .sidebar-section {
-    background-color: white;
+    background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 6px;
 }
@@ -883,4 +883,72 @@ button.add-condition {
 .pagination button.active {
     background-color: #0f6cbf;
     color: white;
+}
+
+.user-details {
+    margin: 5px;
+    margin-top:45px;
+    display: inline-block;
+    width: calc(60% - 12px);
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right:14px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+main, .teacher{
+    margin: 5px;
+    margin-top:45px;
+    display: inline-block;
+    width: calc(100% - 12px);
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right:14px;
+    height: auto;
+    padding-left: 15px;
+    margin-bottom: 100px;
+}
+
+.user-details-title{
+    padding-top: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.user-details-email{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight:bold;
+    padding-bottom: 10px;
+}
+.user-details-link{
+    color:#0f6cbf;
+    padding-left: 20px;
+    display:block;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.main-name{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 5px;
+}
+.name-icon{
+   width: 100px;
+   height: 100px;
+    background-color:#DCDADA;
+    text-align:center;
+    border:none;
+    border-radius: 50px;
+    font-size: 38px;
+}
+
+.teacher-header{
+    height: auto;
 }
