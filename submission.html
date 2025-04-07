@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Assignment Submission</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="moodle-logo.png">
+</head>
+<body>
+      <nav class="top-nav">
+                <div class="concordia-title">
+                    Concordia University of Edmonton Course Management System
+                </div>
+                <div class="top-buttons">
+                    <div class="top-button-line"></div>
+                    <button class="bell-icon">
+                        <img src="bell-icon.png"/>
+                    </button>
+                    <button class="message-icon">
+                        <img src="message-icon.png"/>
+                    </button>
+                    <div class="username">
+                        Ephrata Tsige
+                    </div>
+                    <button class="user-icon">
+                        ET
+                    </button>
+                    <button class="dropdown-icon">
+                        <img src="dropdown-button.png"/>
+                    </button>
+                    <div class="top-dropdown">
+                        <button class="profile-button">Profile</button>
+                        <div class="middle-dropdown-buttons">
+                            <button class="middle-dropdown-button">
+                                Grades
+                            </button>
+                            <button class="middle-dropdown-button">
+                                Calendar
+                            </button>
+                            <button class="middle-dropdown-button">
+                                Messages
+                            </button>
+                            <button class="middle-dropdown-button private-files">
+                                Private Files
+                            </button>
+                            <button class="middle-dropdown-button">
+                                Reports
+                            </button>
+                        </div>
+                        <button class="profile-button">Preferences</button>
+                        <div class="dropdown-border"></div>
+                        <a href="https://identity.concordia.ab.ca/idp/profile/Logout?execution=e2s2">
+                            <button class="profile-button log-out">Log Out</button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        <header class="my-header">
+          <h1 class="main-head">
+            (1-JAN-2025)IT 202(A): Web Design    </h1>
+          <a class="all-link" href="homepage.html">
+              Home 
+          </a> /
+          <a class="all-link" href="homepage.html">
+            My Course 
+            </a> /
+        
+             <a class="all-link" href="homepage.html">
+            1-JAN-2025IT202A
+             </a> / Assignment
+        </header>
+      <div class="main-container">
+        <div class="column" id="col1">
+            <h3 class="side-nav">
+                Navigation
+            </h3>
+            <div class="side-links">
+                <div class="home-nav">
+                    Home
+                </div>
+                <div class="dashboard">
+                    <div class="dashboard-flex">
+                        <button class="dashboard-nav-button">
+                            <img class="dashboard-image" src="dashboard.png"/>
+                        </button>
+                        <div class="dashboard-nav">
+                            Dashboard
+                        </div>
+                    </div>
+                    <div class="dashboard-dropdown">
+
+                    </div>
+                </div>
+                <div class="sites">
+                    <div class="site-flex">
+                        <button class="sites-nav-button">
+                            <img src="side-dropdown.png"/>
+                        </button>
+                        <div class="site-pages">
+                            Site Pages
+                        </div>
+                    </div>
+                    <div class="sites-dropdown">
+                        
+                    </div>
+                </div>
+               
+            </div>
+          </div>
+
+        <div class="main-main">
+            <div class="column" id="col2">
+                <h2 class="title">Assignment Submission</h2>
+
+                    <div class="container">
+                
+                      <p><span style="font-weight: bold;">Opened:</span> Tuesday, 08 April 2025, 12:00 pm</p>
+                      <p><span style="font-weight: bold;"> Due: </span> Tuesday, 08 April 2025, 1:50 pm </p><br>
+                        
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropdown-button" onclick="toggleDropdown()"> <img src="pictures/drpdwn.png"/> Add Submission </button>
+                     
+                      
+                      <div class="dropdown-content" id="dropdownContent">
+                        <p style="text-align: left; font-size: .8em;"  > File submissions <br>
+                            Maximum file size: 50 MB, maximum number of files: 20</p>
+                       <div class="submission">
+                         
+                             <div class="toolbar">
+                               <button title="Create Folder"><img src="pictures/create_folder.jpg"></button> 
+                               <button title="Upload File"><img src="pictures/upload_file.jpg"></button>
+                               <button title="Grid View"><img src="pictures/grid_view.jpg"></button>
+                               <button title="List View"><img src="pictures/list_view.jpg"></button>
+                               <button title="Open Folder"><img src="pictures/open_folder.jpg"></button>
+                             </div>
+                   
+                             <div class="dropdown">
+                             
+                                <div class="dropdown-cont" id="dropdownCont">
+        
+                                  <div id="drop-zone" class="drop-zone">
+                                    <p class="drag_drop">Drag and drop files here or click here to select files</p>
+                                    <input type="file" id="fileInput" hidden multiple>
+                                    <p id="fileSizeMessage" class="hidden"></p>
+                                </div>
+                              
+                                </div>
+                            </div>
+                               
+                           </div><p style="font-size: .4em; ">Accepted file types: PDF document .pdf. dox, doc.</p>
+                       </div>
+                      </div>
+                  </div>
+
+              <div class="submit">
+                <a href="https://drive.google.com/drive/folders/1RM1meMMAxrIJW8LIAKKzxnavFVfNUAHv?usp=sharing" target="_blank">Add Submission</a>
+                <a href="submissionspage.html"> Cancel </a>
+             </div> 
+        </div>
+        <div class="column" id="col3">
+            <p>
+                An introduction to computing systems and platforms, including a variety of concepts that underlie modern 
+                operating systems and the basic functions common to all operating systems. The course includes hands-on 
+                exercises to ensure familiarity with user interfaces and their capabilities.
+            </p>
+        </div>
+    </div>
+        
+    
+      <script src="submissionspage.js"></script>
+    </body>
+    <footer>
+      <div class="footer-contact">
+        <img style="padding-top:2px" src="mail-icon.png"/>
+        <div style="text-decoration: underline; padding-top:6px;">Contact site support</div>
+    </div>
+    <div class="footer-login">
+        You are logged in as <span style="text-decoration: underline;">Ephrata Tsige</span><span style="text-decoration: underline; margin-left:5px;">(Log out)</span>
+    </div>
+    <img class="moodle" src="moodle.png"/>
+    <div class="footer-mobile">
+        Get the mobile app
+    </div>
+    </footer>
+
+</html>
