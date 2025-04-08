@@ -969,13 +969,9 @@ main, .teacher{
     flex: 1; 
     padding: 20px;
     box-sizing: border-box;
-    border-color:  rgb(194, 193, 193);
 }
 
 #col1{
-   display: inline-block;
-    width: 20%;
-    margin: 5px;
     margin-left: 14px;
     border: 1px solid lightgray;
     margin-top: 20px;
@@ -993,10 +989,8 @@ main, .teacher{
 }
 
 #col3 {
-  display: flex 1;
   flex-direction:column;
   border: 1px solid lightgrey;
-  float:right;
   font-weight: 300;
   background-color: #f8f9fa;
   text-align: left;

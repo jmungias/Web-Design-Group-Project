@@ -22,7 +22,6 @@ function toggleDropdown() {
   
   
   dropZone.addEventListener("dragover", (event) => {
-    event.preventDefault();
     dropZone.style.backgroundColor = "#e0e0e0";
   });
   
@@ -33,7 +32,6 @@ function toggleDropdown() {
   
   
   dropZone.addEventListener("drop", (event) => {
-    event.preventDefault();
     dropZone.style.backgroundColor = "#f9f9f9";
     const files = event.dataTransfer.files;
     handleFiles(files);
