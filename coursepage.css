@@ -170,6 +170,7 @@ main {
     flex:1;
     display:flex;
     align-items: flex-start;
+    margin-bottom: 300px;
 }
 
 .courses-header{
@@ -542,3 +543,7 @@ footer{
     border-radius: 2px;
     
     }
+
+.courses-nav-button{
+    border:none;
+}
