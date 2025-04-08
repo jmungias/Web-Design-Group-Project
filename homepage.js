@@ -159,12 +159,27 @@ const sitesDropDownButton = document.querySelector(".sites-nav-button")
 const sitesDropDown = document.querySelector(".sites-dropdown")
 sitesDropDownButton.addEventListener("click", sitesToggleDropDown)
 
-function sitesToggleTopDropDown(){
-    if (!sitesDropDownToggle){
-        sitesDropDownToggle = true
-        sitesDropDown.classList.add("top-dropdown-off")
-    }else{
-        sitesDropDownToggle = false
-        sitesDropDown.classList.remove("top-dropdown-off")
+function toggleTopDropDown(){
+    if (!topDropDownToggle){
+        topDropDownToggle = true
+        topDropDown.classList.add("top-dropdown-off")
+
+        // ✅ Add event listener after the button exists in DOM
+        setTimeout(() => {
+            const gradesButton = document.getElementById("grades");
+            if (gradesButton) {
+                gradesButton.addEventListener("click", () => {
+                    window.location.href = 'grades.html';
+                });
+            }
+        }, 0);
+
+    } else {
+        topDropDownToggle = false
+        topDropDown.classList.remove("top-dropdown-off")
     }
 }
+
+document.getElementById("grades").addEventListener("click", () => {
+    window.location.href='grades.html'
+});
