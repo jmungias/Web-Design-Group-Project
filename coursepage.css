@@ -529,8 +529,16 @@ footer{
     color: #0d5ba1;
     text-decoration:underline;
 }
-.coursesummary{
+
+
+
+
+.course-icon{
+    height: 90px;
+    margin: 5px;
+    margin-left:18px;
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    border-radius: 2px;
     
-
-}
-
+    }
