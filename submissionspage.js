@@ -52,17 +52,16 @@ function toggleDropdown() {
   
   
   function handleFiles(files) {
-    const maxFileSize = 50 * 1024 * 1024; // 50 MB
+    const maxFileSize = 50 * 1024 * 1024; 
     let isFileTooLarge = false;
   
-    // Clear previous details
     fileDetails.innerHTML = "";
   
     for (const file of files) {
       if (file.size > maxFileSize) {
         isFileTooLarge = true;
       } else {
-        // Add file detail to list
+        
         const listItem = document.createElement("li");
         listItem.textContent = `Name: ${file.name}, Size: ${(file.size / 1024)} KB, Type: ${file.type || "Unknown"}`;
         fileDetails.appendChild(listItem);
@@ -70,7 +69,7 @@ function toggleDropdown() {
     }
   
     if (isFileTooLarge) {
-      fileSizeMessage.textContent = "Maximum file size is 50 MB. Please remove large files.";
+      fileSizeMessage.textContent = "Maximum file size is 50 MB. ";
       fileSizeMessage.style.display = "block";
     } else {
       fileSizeMessage.textContent = "";

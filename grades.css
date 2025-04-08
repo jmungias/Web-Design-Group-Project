@@ -136,17 +136,6 @@ header{
     text-decoration: underline;
 }
 
-aside{
-    display: inline-block;
-    width: 23%;
-    margin: 5px;
-    margin-left: 14px;
-    border: 1px solid lightgray;
-    margin-top: 15px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    padding-bottom:10px;
-}
 .side-nav{
     padding-left:17px;
     font-weight: 200;
@@ -170,7 +159,6 @@ main {
     flex:1;
     display:flex;
     align-items: flex-start;
-    margin-bottom: 300px;
 }
 
 .courses-header{
@@ -204,31 +192,6 @@ main {
     text-decoration: underline;
 }
 
-.course-text{
-    font-size: 15px;
-    padding-left:14px;
-    padding-top:5px;
-    line-height: 25px;
-    padding-right: 20px;
-}
-
-.teacher-title{
-    font-weight:800;
-    font-size: 14px;
-    padding-left:14px;
-    display:inline-block;
-}
-
-.teacher-link{
-    display:inline-block;
-    font-size:16px;
-    color: #0f6cbf;
-    text-decoration: none;
-}
-
-.teacher-link:hover{
-    text-decoration: underline;
-}
 
 .courses{
     display:flex;
@@ -253,7 +216,7 @@ main {
     width: 120px;
     border:none;
     border-radius: 5px;
-    transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition:color 0.15s ease-in-out; background-color: 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-width:1px;
     margin-top: 13px;
     cursor:pointer;
@@ -268,55 +231,6 @@ main {
     border-color:#495057;
 }
 
-.search{
-    display:flex;
-    margin-top: 50px;
-}
-
-.search-input{
-    border:solid 1px;
-    border-width:1px;
-    border-color:lightgray;
-    border-right:none;
-    height: 37px;
-    width: 200px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    font-size: 15px;
-    transition:0.1s;
-    outline:none;
-}
-
-.search-input:hover{
-    border-color:#0f6cbf;
-}
-
-.search-button{
-    border:solid;
-    border-left:none;
-    margin:0px;
-    padding:0px;
-    background-color:#0f6cbf;
-    height:41px;
-    width:35px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-color: #0f6cbf;
-    border-width:1px;
-    transition:0.1s;
-    cursor:pointer;
-}
-
-.search-button:hover{
-    background-color:#0d5ba1
-}
-
-.search-button img{
-    margin:0px;
-    padding:0px;
-    height: 17px;
-    width: 17px;
-}
 
 .top-buttons{
     display:flex;
@@ -531,34 +445,102 @@ footer{
     text-decoration:underline;
 }
 
-
-
-
-.course-icon{
-    height: 90px;
-    margin: 5px;
-    margin-left:18px;
-    border: 1px solid lightgray;
-    margin-top: 15px;
-    border-radius: 2px;
-    
-    }
-
-
-.course-o {
-    height: 400px;
-    margin: 5px;
-    margin-left:18px;
-    border: 1px solid lightgray;
-    margin-top: 15px;
-    border-radius: 2px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
-.course-i {
-    height: 90px;
-    margin: 5px;
-    margin-left:18px;
-    margin-top: 15px;
-    border-radius: 2px;
-.courses-nav-button{
-    border:none;
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
 }
+
+th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.assignment {
+    color: #568cc5;
+}
+
+
+.quiz{color: #568cc5;}
+.manual-item {
+    color: #6c757d;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+
+h2{nav-left: 10px}
+
+aside {
+    font-family: 'Segoe UI', sans-serif;
+    width: 250px;
+    color: #1e1e1e;
+  }
+  
+  .side-nav {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .side-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #1e73be;
+    font-size: 14px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-text {
+    font-size: 14px;
+    color: #1e1e1e;
+  }
+  
+  .nav-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  }
+  
+  .nav-icon-small {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+  }
+  
+  .nav-indent {
+    margin-left: 16px;
+  }
+  
+  .nav-double-indent {
+    margin-left: 32px;
+  }
+  
+  .nav-triple-indent {
+    margin-left: 48px;
+  }
+
+  footer{margin-bottom:0%;}

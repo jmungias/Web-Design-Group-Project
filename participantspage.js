@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
             row.innerHTML = `
                 <td><input type="checkbox" /></td>
                 <td>${p.firstname} ${p.lastname}</td>
-                <td>Student</td>
+                <td>${p.firstname === "Dhara" && p.lastname === "Wagh" ? "Teacher" : "Student"}</td>
             `;
             tableBody.appendChild(row);
         });

@@ -27,49 +27,57 @@ function toggleMyCourses (){
     if (!myCoursesDropDownToggle){
         myCourses.innerHTML =
         `<div class="course-nav">
-            <button class="course-nav-button">
-                <img src="side-dropdown.png"/>
-            </button>
-            <div class="course-nav-text">
-                1-JAN-2025IT202A
-            </div>
-        </div>
-        <div class="course-nav">
-            <button class="course-nav-button">
-                <img src="side-dropdown.png"/>
-            </button>
-            <div class="course-nav-text">
-                1-JAN-2025IT301A
-            </div>
-        </div>
-        <div class="course-nav">
-            <button class="course-nav-button">
-                <img src="side-dropdown.png"/>
-            </button>
-            <div class="course-nav-text">
-                1-JAN-2025IT302A
-            </div>
-        </div>
-        <div class="course-nav">
-            <button class="course-nav-button">
-                <img src="side-dropdown.png"/>
-            </button>
-            <div class="course-nav-text">
-                1-JAN-2024CMPT211A
-            </div>
-        </div>
-        <div class="course-nav">
-            <button class="course-nav-button">
-                <img src="side-dropdown.png"/>
-            </button>
-            <div class="course-nav-text">
-                1-JAN-2024IT210A
-            </div>
-        </div>
-        <div class="more">
-            <button class="more-button"></button>
-            <div class="more-text">More...</div>
-        </div>`;
+                                <button class="course-nav-button">
+                                    <img src="side-dropdown.png"/>
+                                </button>
+                                <div class="course-nav-text">
+                                    1-JAN-2025IT202A
+                                </div>
+                            </div>
+                            <div class="course-nav participants-nav" style="margin-left:7%">
+                                <button class="course-nav-button">
+                                    <img src="side-dropdown.png"/>
+                                </button>
+                                <div class="course-nav-text participants-link" onclick="window.location.href='participantspage.html'">
+                                    <a>Participants</a>
+                                </div>
+                            </div>
+                            <div class="course-nav">
+                                <button class="course-nav-button">
+                                    <img src="side-dropdown.png"/>
+                                </button>
+                                <div class="course-nav-text">
+                                    1-JAN-2025IT301A
+                                </div>
+                            </div>
+                            <div class="course-nav">
+                                <button class="course-nav-button">
+                                    <img src="side-dropdown.png"/>
+                                </button>
+                                <div class="course-nav-text">
+                                    1-JAN-2025IT302A
+                                </div>
+                            </div>
+                            <div class="course-nav">
+                                <button class="course-nav-button">
+                                    <img src="side-dropdown.png"/>
+                                </button>
+                                <div class="course-nav-text">
+                                    1-JAN-2024CMPT211A
+                                </div>
+                            </div>
+                            <div class="course-nav">
+                                <button class="course-nav-button">
+                                    <img src="side-dropdown.png"/>
+                                </button>
+                                <div class="course-nav-text">
+                                    1-JAN-2024IT210A
+                                </div>
+                            </div>
+                            <div class="more">
+                                <button class="more-button"></button>
+                                <div class="more-text">More...</div>
+                            </div>`;
         myCoursesDropDownToggle = true;
     } else{
             myCourses.innerHTML =null;
@@ -151,12 +159,27 @@ const sitesDropDownButton = document.querySelector(".sites-nav-button")
 const sitesDropDown = document.querySelector(".sites-dropdown")
 sitesDropDownButton.addEventListener("click", sitesToggleDropDown)
 
-function sitesToggleTopDropDown(){
-    if (!sitesDropDownToggle){
-        sitesDropDownToggle = true
-        sitesDropDown.classList.add("top-dropdown-off")
-    }else{
-        sitesDropDownToggle = false
-        sitesDropDown.classList.remove("top-dropdown-off")
+function toggleTopDropDown(){
+    if (!topDropDownToggle){
+        topDropDownToggle = true
+        topDropDown.classList.add("top-dropdown-off")
+
+        // ✅ Add event listener after the button exists in DOM
+        setTimeout(() => {
+            const gradesButton = document.getElementById("grades");
+            if (gradesButton) {
+                gradesButton.addEventListener("click", () => {
+                    window.location.href = 'grades.html';
+                });
+            }
+        }, 0);
+
+    } else {
+        topDropDownToggle = false
+        topDropDown.classList.remove("top-dropdown-off")
     }
 }
+
+document.getElementById("grades").addEventListener("click", () => {
+    window.location.href='grades.html'
+});
