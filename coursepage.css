@@ -542,3 +542,22 @@ footer{
     border-radius: 2px;
     
     }
+
+
+.course-o {
+    height: 400px;
+    margin: 5px;
+    margin-left:18px;
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+.course-i {
+    height: 90px;
+    margin: 5px;
+    margin-left:18px;
+    margin-top: 15px;
+    border-radius: 2px;
+    
+
+}
