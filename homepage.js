@@ -30,7 +30,7 @@ function toggleMyCourses (){
                                 <button class="course-nav-button">
                                     <img src="side-dropdown.png"/>
                                 </button>
-                                <div class="course-nav-text">
+                                <div class="course-nav-text" onclick="window.location.href='coursepage(IT,202).html'">
                                     1-JAN-2025IT202A
                                 </div>
                             </div>
@@ -46,7 +46,7 @@ function toggleMyCourses (){
                                 <button class="course-nav-button">
                                     <img src="side-dropdown.png"/>
                                 </button>
-                                <div class="course-nav-text">
+                                <div class="course-nav-text" onclick="window.location.href='coursepage(IT,202).html'">
                                     1-JAN-2025IT301A
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ function toggleMyCourses (){
                                 <button class="course-nav-button">
                                     <img src="side-dropdown.png"/>
                                 </button>
-                                <div class="course-nav-text">
+                                <div class="course-nav-text" onclick="window.location.href='coursepage(IT,202).html'">
                                     1-JAN-2025IT302A
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ function toggleMyCourses (){
                                 <button class="course-nav-button">
                                     <img src="side-dropdown.png"/>
                                 </button>
-                                <div class="course-nav-text">
+                                <div class="course-nav-text" onclick="window.location.href='coursepage(IT,202).html'">
                                     1-JAN-2024CMPT211A
                                 </div>
                             </div>
@@ -70,7 +70,7 @@ function toggleMyCourses (){
                                 <button class="course-nav-button">
                                     <img src="side-dropdown.png"/>
                                 </button>
-                                <div class="course-nav-text">
+                                <div class="course-nav-text" onclick="window.location.href='coursepage(IT,202).html'">
                                     1-JAN-2024IT210A
                                 </div>
                             </div>
